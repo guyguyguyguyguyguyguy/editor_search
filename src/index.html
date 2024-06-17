@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="webview">
+    <div class="topbar"></div>
+    <iframe id="webview-iframe"></iframe>
+  </div>
+  <div class="editor" id="editor">
+    <textarea class="text" placeholder="Start typing..."></textarea>
+  </div>
+  <div id="overlay">
+    <div id="popup">
+      <input type="text" id="popup-input" />
+    </div>
+  </div>
+  <div class="ghostpane"></div>
+  <script src="allthestuff.js" type="module"></script>
+</body>
+
+</html>

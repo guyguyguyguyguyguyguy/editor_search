@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  overflow: hidden;
+}
+
+.editor {
+  width: 100vw;
+  height: 100vh;
+  background: gray;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  position: absolute;
+}
+
+.text {
+  width: 95vw;
+  height: 95vh;
+
+  resize: none;
+}
+
+.webview {
+  position: absolute;
+  width: 30%;
+  height: 35%;
+  margin: 0;
+  z-index: 99;
+  border: 2px solid gray;
+  display: flex;
+  padding: 0;
+  resize: both;
+  overflow: hidden;
+  display: none
+}
+
+
+.topbar {
+  width: 100%;
+  height: 20px;
+  background-color: darkgray;
+  cursor: move;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.webview iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  /* background: lightcoral; */
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.ghostpane {
+  background: rgba(0, 0, 255, .4);
+  border: 5px solid blue;
+  border-radius: 10px;
+  opacity: 0.2;
+  display: none;
+
+  width: 25%;
+  height: 30%;
+
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  z-index: 98;
+
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.3);
+  display: none;
+  justify-content: center;
+  z-index: 1002;
+  align-items: center;
+}
+
+#popup {
+  background: gray;
+  padding: 6px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#popup input {
+  width: 300px;
+  padding: 10px;
+  font-size: 11px;
+}
