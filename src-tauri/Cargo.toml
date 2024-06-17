@@ -17,6 +17,7 @@ serde_json = "1"
 reqwest = { version = "0.12.4", features = ["blocking"] }
 scraper = "0.19.0"
 thiserror = "1.0.61"
+itertools = "0.13.0"
 
 [features]
 # This feature is used for production builds or when a dev server is not specified, DO NOT REMOVE!!
